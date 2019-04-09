@@ -21,6 +21,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Snap
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.HAL3.enabled=1 \
+    persist.camera.eis.enabled=1
+
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.target.rc \
@@ -52,6 +56,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oppo_RMX1801
 
+# LiveDisplay native
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@1.0-service-sdm
+	
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
@@ -74,6 +82,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# Wifi display
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0 \
+    persist.hwc.enable_vds=1
 
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/oppo/RMX1801/RMX1801-vendor.mk)
