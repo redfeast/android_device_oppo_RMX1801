@@ -56,7 +56,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oppo_RMX1801
 
-# LiveDisplay native
+# LiveDisplay native    (line might not work for havoc, check??)(also verify vendor.lineage.livedispaly entry in manifest.xml)
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@1.0-service-sdm
 	
@@ -67,8 +67,9 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+#this might not be necessary, check??
+ifneq ($(findstring havoc, $(TARGET_PRODUCT)),)
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-havoc
 endif
 
 # QTI

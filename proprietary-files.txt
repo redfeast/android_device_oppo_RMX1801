@@ -93,7 +93,7 @@ etc/vstab_configs/vstab_db_1080p_video_0_sfov.config
 etc/vstab_configs/vstab_db_720p_preview_0_imx519_lsm.config
 
 # CNE
--priv-app/CNEService/CNEService.apk
+priv-app/CNEService/CNEService.apk
 etc/cne/SwimConfig.xml
 etc/cne/andsfCne.xml
 etc/permissions/cneapiclient.xml
@@ -118,7 +118,7 @@ lib64/vendor.display.postproc@1.0.so
 lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # DPM
--priv-app/dpmserviceapp/dpmserviceapp.apk
+priv-app/dpmserviceapp/dpmserviceapp.apk
 bin/dpmd
 etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
@@ -212,11 +212,11 @@ lib64/libqmi_cci_system.so
 lib/libqmi_cci_system.so					
 
 # Radio
--app/QtiTelephonyService/QtiTelephonyService.apk
--app/QtiSystemService/QtiSystemService.apk
--app/datastatusnotification/datastatusnotification.apk
--app/embms/embms.apk
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+app/QtiTelephonyService/QtiTelephonyService.apk
+app/QtiSystemService/QtiSystemService.apk
+app/datastatusnotification/datastatusnotification.apk
+app/embms/embms.apk
+priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 etc/permissions/embms.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
@@ -225,9 +225,9 @@ framework/qcrilhook.jar
 framework/embmslibrary.jar
 
 # Radio - IMS
--app/ims/ims.apk|e0982b8ecbb0d44643c7a18fe837796bb42f6c3a
--app/imssettings/imssettings.apk
--app/uceShimService/uceShimService.apk
+app/ims/ims.apk
+app/imssettings/imssettings.apk
+app/uceShimService/uceShimService.apk
 etc/permissions/qti-vzw-ims-internal.xml
 lib/com.qualcomm.qti.imscmservice@1.0.so
 lib/lib-imscamera.so
@@ -278,8 +278,8 @@ lib64/android.hardware.wifi.supplicant@1.0.so
 lib64/vendor.qti.hardware.wifi.keystore@1.0.so
 
 # Wi-Fi Display
--app/WfdService/WfdService.apk
--framework/WfdCommon.jar
+app/WfdService/WfdService.apk
+framework/WfdCommon.jar
 bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfig.xml
