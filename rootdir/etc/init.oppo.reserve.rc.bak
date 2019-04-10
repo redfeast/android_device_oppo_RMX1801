@@ -30,3 +30,4 @@ on post-fs-data
   mkdir /opporeserve/connectivity/felicalock 0770 nfc system
 ##endif VENDOR_EDIT
   restorecon_recursive /opporeserve
+

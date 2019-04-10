@@ -27,3 +27,4 @@
 
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
+
